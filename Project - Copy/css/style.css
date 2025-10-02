@@ -1,0 +1,42 @@
+/* Palette: Coral (#FF6B6B), Peach (#FFD6A5), Mint (#9AE6B4), Deep Teal (#234E52), Soft Cream (#FFF7ED) */
+:root{
+  --coral:#FF6B6B;
+  --peach:#FFD6A5;
+  --mint:#9AE6B4;
+  --teal:#234E52;
+  --cream:#FFF7ED;
+  --muted: #6b6b6b;
+  --bg: linear-gradient(135deg,var(--peach),var(--mint));
+}
+
+*{box-sizing:border-box;font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+body{margin:0;background:var(--cream);color:var(--teal);}
+
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;background:var(--bg);color:var(--teal);box-shadow:0 6px 18px rgba(35,78,82,0.12);}
+.brand{display:flex;align-items:center;gap:12px;}
+.logo{width:64px;height:64px;object-fit:cover;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.12);}
+.site-header h1{margin:0;font-size:20px;letter-spacing:0.5px;}
+.tag{margin:0;font-size:12px;color:var(--teal);opacity:0.9;}
+
+.nav a{color:var(--teal);text-decoration:none;margin-left:16px;padding:8px 12px;border-radius:8px;}
+.nav a.active, .nav a:hover{background:rgba(255,255,255,0.6);box-shadow:0 4px 10px rgba(0,0,0,0.06);}
+
+.hero{display:flex;align-items:center;gap:24px;padding:48px 64px;background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2));border-bottom:1px solid rgba(0,0,0,0.03);}
+.hero-text{max-width:560px;}
+.hero-text h2{font-size:34px;margin:0 0 12px;color:var(--teal);}
+.hero-text p{margin:0 0 16px;color:var(--muted);}
+.btn{background:var(--coral);color:white;padding:10px 16px;border:none;border-radius:10px;cursor:pointer;text-decoration:none;font-weight:600;}
+
+.hero-img{width:360px;height:220px;border-radius:12px;object-fit:cover;box-shadow:0 12px 30px rgba(35,78,82,0.12);}
+
+.container{max-width:1000px;margin:32px auto;padding:0 20px;}
+.features{display:flex;gap:18px;padding:28px 64px;}
+.card{background:white;padding:18px;border-radius:12px;box-shadow:0 8px 18px rgba(35,78,82,0.06);flex:1;}
+
+.menu-table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(35,78,82,0.06);}
+.menu-table th, .menu-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #f1f1f1;}
+.menu-table img{width:96px;height:64px;object-fit:cover;border-radius:8px;}
+
+.form-row{margin:12px 0;display:flex;flex-direction:column;}
+input, textarea, select{padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:14px;}
+.site-footer{text-align:center;padding:18px;color:var(--muted);margin-top:32px;}

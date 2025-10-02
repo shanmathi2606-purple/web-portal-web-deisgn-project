@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — NIE-EAT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="logo" class="logo">
+      <h1>Blossom Buffet</h1>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="order.html">Place Order</a>
+      <a href="status.html">Order Status</a>
+      <a href="admin.php">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Our Menu</h2>
+    <table class="menu-table" id="menu-table">
+      <thead>
+        <tr><th>Picture</th><th>Item</th><th>Category</th><th>Price (SGD)</th><th>Add</th></tr>
+      </thead>
+      <tbody>
+        <!-- sample rows will be added by JS for demo -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; NIE-EAT</p>
+  </footer>
+
+  <script src="js/menu-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Place Order — NIE-EAT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="logo" class="logo">
+      <h1>Blossom Buffet</h1>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html" class="active">Place Order</a>
+      <a href="status.html">Order Status</a>
+      <a href="admin.php">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Place an Order</h2>
+    <form id="orderForm" action="process_order.php" method="post" onsubmit="return validateOrder()">
+      <div class="form-row">
+        <label for="cust_name">Full name</label>
+        <input id="cust_name" name="cust_name" required>
+      </div>
+      <div class="form-row">
+        <label for="cust_email">Email</label>
+        <input id="cust_email" name="cust_email" type="email" required>
+      </div>
+      <div class="form-row">
+        <label for="cust_phone">Contact number</label>
+        <input id="cust_phone" name="cust_phone" required>
+      </div>
+
+      <div class="form-row">
+        <label for="menu_items">Select menu item IDs (comma separated)</label>
+        <input id="menu_items" name="menu_items" placeholder="e.g. 1,3,5" required>
+        <small>Use the Menu page to view item IDs.</small>
+      </div>
+
+      <div class="form-row">
+        <label for="event_date">Event date</label>
+        <input id="event_date" name="event_date" type="date" required>
+      </div>
+
+      <div class="form-row">
+        <label for="notes">Additional notes</label>
+        <textarea id="notes" name="notes"></textarea>
+      </div>
+
+      <button class="btn" type="submit">Submit Order</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; NIE-EAT</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
